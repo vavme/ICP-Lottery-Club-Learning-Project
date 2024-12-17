@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "lottery_club_backend": {
+      "main": "src/lottery_club_backend/main.mo",
+      "type": "motoko"
+    },
+    "lottery_club_frontend": {
+      "dependencies": [
+        "lottery_club_backend"
+      ],
+      "source": [
+        "src/lottery_club_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "lottery_club_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
